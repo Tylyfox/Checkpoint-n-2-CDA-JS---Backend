@@ -1,0 +1,12 @@
+entity: Country
+items:
+  country{1..10}:
+    code: "{{random.alphaNumeric(2)}}"
+    name: "{{address.country}}"
+    emoji: "{{internet.emoji}}"
+    continentCode: "{{random.alphaNumeric(2)}}"
+  country{11..20}:
+    code: "{{random.alphaNumeric(2)}}"
+    name: "{{address.country}}"
+    emoji: "{{internet.emoji}}"
+    continentCode: "{{random.alphaNumeric(2)}}"

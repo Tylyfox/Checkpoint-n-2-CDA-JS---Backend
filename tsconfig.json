@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                 // Spécifie la version d'ECMAScript cible pour le code JavaScript compilé.
+    "module": "commonjs",                               // Définit le système de modules utilisé, ici CommonJS, adapté pour Node.js.
+    "outDir": "./dist",                                 // Chemin du répertoire où les fichiers JavaScript compilés seront générés.
+    "esModuleInterop": true,                            // Permet l'importation par défaut des modules CommonJS comme des modules ES6.
+    "forceConsistentCasingInFileNames": true,           // Assure que la casse des noms de fichiers est cohérente lors de l'importation.
+    "strict": true,                                     // Active toutes les options strictes pour maximiser la vérification des types.
+    "skipLibCheck": true,                               // Ignore la vérification des types des fichiers de déclaration (*.d.ts) des bibliothèques.
+    "emitDecoratorMetadata": true,                      // Permet l'émission d'informations de métadonnées pour les décorateurs.
+    "experimentalDecorators": true,                     // Active le support pour les décorateurs expérimentaux, tels que ceux utilisés en TypeScript pour Angular.
+    "strictPropertyInitialization": false,              // Désactive la vérification stricte de l'initialisation des propriétés dans les classes.
+  }
+}
