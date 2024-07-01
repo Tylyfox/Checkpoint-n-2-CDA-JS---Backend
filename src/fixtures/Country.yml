@@ -1,12 +1,12 @@
 entity: Country
 items:
   country{1..10}:
-    code: "{{random.alphaNumeric(2)}}"
-    name: "{{address.country}}"
-    emoji: "{{internet.emoji}}"
-    continentCode: "{{random.alphaNumeric(2)}}"
+    code: "<%= ['US', 'CA', 'GB', 'FR', 'DE', 'JP', 'CN', 'IN', 'BR', 'ZA', 'RU', 'AU', 'IT', 'ES', 'MX', 'KR', 'NL', 'TR', 'CH', 'SE'][Math.floor(Math.random() * 20)] %>"
+    name: "<%= ['United States', 'Canada', 'United Kingdom', 'France', 'Germany', 'Japan', 'China', 'India', 'Brazil', 'South Africa', 'Russia', 'Australia', 'Italy', 'Spain', 'Mexico', 'South Korea', 'Netherlands', 'Turkey', 'Switzerland', 'Sweden'][Math.floor(Math.random() * 20)] %>"
+    emoji: "<%= ['🇺🇸', '🇨🇦', '🇬🇧', '🇫🇷', '🇩🇪', '🇯🇵', '🇨🇳', '🇮🇳', '🇧🇷', '🇿🇦', '🇷🇺', '🇦🇺', '🇮🇹', '🇪🇸', '🇲🇽', '🇰🇷', '🇳🇱', '🇹🇷', '🇨🇭', '🇸🇪'][Math.floor(Math.random() * 20)] %>"
+    continentCode: "<%= ['AF', 'AN', 'AS', 'EU', 'NA', 'OC', 'SA'][Math.floor(Math.random() * 7)] %>"
   country{11..20}:
-    code: "{{random.alphaNumeric(2)}}"
-    name: "{{address.country}}"
-    emoji: "{{internet.emoji}}"
-    continentCode: "{{random.alphaNumeric(2)}}"
+    code: "<%= ['US', 'CA', 'GB', 'FR', 'DE', 'JP', 'CN', 'IN', 'BR', 'ZA', 'RU', 'AU', 'IT', 'ES', 'MX', 'KR', 'NL', 'TR', 'CH', 'SE'][Math.floor(Math.random() * 20)] %>"
+    name: "<%= ['United States', 'Canada', 'United Kingdom', 'France', 'Germany', 'Japan', 'China', 'India', 'Brazil', 'South Africa', 'Russia', 'Australia', 'Italy', 'Spain', 'Mexico', 'South Korea', 'Netherlands', 'Turkey', 'Switzerland', 'Sweden'][Math.floor(Math.random() * 20)] %>"
+    emoji: "<%= ['🇺🇸', '🇨🇦', '🇬🇧', '🇫🇷', '🇩🇪', '🇯🇵', '🇨🇳', '🇮🇳', '🇧🇷', '🇿🇦', '🇷🇺', '🇦🇺', '🇮🇹', '🇪🇸', '🇲🇽', '🇰🇷', '🇳🇱', '🇹🇷', '🇨🇭', '🇸🇪'][Math.floor(Math.random() * 20)] %>"
+    continentCode: "<%= ['AF', 'AN', 'AS', 'EU', 'NA', 'OC', 'SA'][Math.floor(Math.random() * 7)] %>"
