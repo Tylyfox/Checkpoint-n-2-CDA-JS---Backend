@@ -1,4 +1,5 @@
-"# Checkpoint-n-2-CDA-JS---Backend" 
+/h1 Je ne sais pas faire de README
+
 Projet Backend - Checkpoint n°2 CDA JS
 
 🎓 Bonjour David ! 🎓
@@ -11,24 +12,6 @@ SQLite et TypeORM : Gestion des données facile et efficace.
 ts-node-dev : Pour le confort de développement.
 typeorm-fixtures-cli : Pour peupler la base de données avec des données réalistes ou pas.
 
-📂 Structure du Projet
-
-  /
-  ├── src/
-  │   ├── entities/
-  │   │   └── country.entity.ts
-  │   ├── fixtures/
-  │   │   ├── Country.yml
-  │   ├── lib/
-  │   │   └── datasource.ts
-  │   ├── resolvers/
-  │   │   └── country.resolver.ts
-  │   ├── services/
-  │   │   └── countries.services.ts
-  │   └── index.ts
-  ├── package.json
-  ├── tsconfig.json
-  └── README.md
 
 🚀 Lancer le Projet
 Clonez ce dépôt : git clone https://github.com/Tylyfox/Checkpoint-n-2-CDA-JS---Backend
