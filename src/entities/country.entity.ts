@@ -1,5 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
 import { Field, InputType, ObjectType } from "type-graphql";
+import { Continent } from "./continent.entity";
 
 @ObjectType()
 @Entity()
@@ -9,33 +10,33 @@ export class Country {
   id: string;
 
   @Field({ nullable: false })
-  @Column({nullable: false})
+  @Column({ nullable: false, unique: true })
   code: string;
 
-  @Field({nullable: false})
-  @Column({nullable: false})
+  @Field({ nullable: false })
+  @Column({ nullable: false, unique: true })
   name: string;
 
-  @Field({nullable: true})
-  @Column({nullable: true})
+  @Field({ nullable: true })
+  @Column({ nullable: true })
   emoji: string;
 
-  @Field({nullable: false})
-  @Column({nullable: false})
-  continentCode: string;
+  @Field(() => Continent)
+  @ManyToOne(() => Continent, continent => continent.countries)
+  continent: Continent;
 }
 
 @InputType()
 export class CountryCreateInput {
-  @Field({nullable: false})
+  @Field({ nullable: false })
   code: string;
 
-  @Field({nullable: false})
+  @Field({ nullable: false })
   name: string;
 
-  @Field({nullable: true})
+  @Field({ nullable: true })
   emoji: string;
 
-  @Field({nullable: false})
+  @Field({ nullable: false })
   continentCode: string;
 }

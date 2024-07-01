@@ -1,12 +1,102 @@
 entity: Country
 items:
-  country{1..10}:
-    code: "<%= ['US', 'CA', 'GB', 'FR', 'DE', 'JP', 'CN', 'IN', 'BR', 'ZA', 'RU', 'AU', 'IT', 'ES', 'MX', 'KR', 'NL', 'TR', 'CH', 'SE'][Math.floor(Math.random() * 20)] %>"
-    name: "<%= ['United States', 'Canada', 'United Kingdom', 'France', 'Germany', 'Japan', 'China', 'India', 'Brazil', 'South Africa', 'Russia', 'Australia', 'Italy', 'Spain', 'Mexico', 'South Korea', 'Netherlands', 'Turkey', 'Switzerland', 'Sweden'][Math.floor(Math.random() * 20)] %>"
-    emoji: "<%= ['🇺🇸', '🇨🇦', '🇬🇧', '🇫🇷', '🇩🇪', '🇯🇵', '🇨🇳', '🇮🇳', '🇧🇷', '🇿🇦', '🇷🇺', '🇦🇺', '🇮🇹', '🇪🇸', '🇲🇽', '🇰🇷', '🇳🇱', '🇹🇷', '🇨🇭', '🇸🇪'][Math.floor(Math.random() * 20)] %>"
-    continentCode: "<%= ['AF', 'AN', 'AS', 'EU', 'NA', 'OC', 'SA'][Math.floor(Math.random() * 7)] %>"
-  country{11..20}:
-    code: "<%= ['US', 'CA', 'GB', 'FR', 'DE', 'JP', 'CN', 'IN', 'BR', 'ZA', 'RU', 'AU', 'IT', 'ES', 'MX', 'KR', 'NL', 'TR', 'CH', 'SE'][Math.floor(Math.random() * 20)] %>"
-    name: "<%= ['United States', 'Canada', 'United Kingdom', 'France', 'Germany', 'Japan', 'China', 'India', 'Brazil', 'South Africa', 'Russia', 'Australia', 'Italy', 'Spain', 'Mexico', 'South Korea', 'Netherlands', 'Turkey', 'Switzerland', 'Sweden'][Math.floor(Math.random() * 20)] %>"
-    emoji: "<%= ['🇺🇸', '🇨🇦', '🇬🇧', '🇫🇷', '🇩🇪', '🇯🇵', '🇨🇳', '🇮🇳', '🇧🇷', '🇿🇦', '🇷🇺', '🇦🇺', '🇮🇹', '🇪🇸', '🇲🇽', '🇰🇷', '🇳🇱', '🇹🇷', '🇨🇭', '🇸🇪'][Math.floor(Math.random() * 20)] %>"
-    continentCode: "<%= ['AF', 'AN', 'AS', 'EU', 'NA', 'OC', 'SA'][Math.floor(Math.random() * 7)] %>"
+  country1:
+    code: 'US'
+    name: 'United States'
+    emoji: '🇺🇸'
+    continent: <%= continents.find(c => c.code === 'NA').id %>
+  country2:
+    code: 'CA'
+    name: 'Canada'
+    emoji: '🇨🇦'
+    continent: <%= continents.find(c => c.code === 'NA').id %>
+  country3:
+    code: 'GB'
+    name: 'United Kingdom'
+    emoji: '🇬🇧'
+    continent: <%= continents.find(c => c.code === 'EU').id %>
+  country4:
+    code: 'FR'
+    name: 'France'
+    emoji: '🇫🇷'
+    continent: <%= continents.find(c => c.code === 'EU').id %>
+  country5:
+    code: 'DE'
+    name: 'Germany'
+    emoji: '🇩🇪'
+    continent: <%= continents.find(c => c.code === 'EU').id %>
+  country6:
+    code: 'JP'
+    name: 'Japan'
+    emoji: '🇯🇵'
+    continent: <%= continents.find(c => c.code === 'AS').id %>
+  country7:
+    code: 'CN'
+    name: 'China'
+    emoji: '🇨🇳'
+    continent: <%= continents.find(c => c.code === 'AS').id %>
+  country8:
+    code: 'IN'
+    name: 'India'
+    emoji: '🇮🇳'
+    continent: <%= continents.find(c => c.code === 'AS').id %>
+  country9:
+    code: 'BR'
+    name: 'Brazil'
+    emoji: '🇧🇷'
+    continent: <%= continents.find(c => c.code === 'SA').id %>
+  country10:
+    code: 'ZA'
+    name: 'South Africa'
+    emoji: '🇿🇦'
+    continent: <%= continents.find(c => c.code === 'AF').id %>
+  country11:
+    code: 'RU'
+    name: 'Russia'
+    emoji: '🇷🇺'
+    continent: <%= continents.find(c => c.code === 'EU').id %>
+  country12:
+    code: 'AU'
+    name: 'Australia'
+    emoji: '🇦🇺'
+    continent: <%= continents.find(c => c.code === 'OC').id %>
+  country13:
+    code: 'IT'
+    name: 'Italy'
+    emoji: '🇮🇹'
+    continent: <%= continents.find(c => c.code === 'EU').id %>
+  country14:
+    code: 'ES'
+    name: 'Spain'
+    emoji: '🇪🇸'
+    continent: <%= continents.find(c => c.code === 'EU').id %>
+  country15:
+    code: 'MX'
+    name: 'Mexico'
+    emoji: '🇲🇽'
+    continent: <%= continents.find(c => c.code === 'NA').id %>
+  country16:
+    code: 'KR'
+    name: 'South Korea'
+    emoji: '🇰🇷'
+    continent: <%= continents.find(c => c.code === 'AS').id %>
+  country17:
+    code: 'NL'
+    name: 'Netherlands'
+    emoji: '🇳🇱'
+    continent: <%= continents.find(c => c.code === 'EU').id %>
+  country18:
+    code: 'TR'
+    name: 'Turkey'
+    emoji: '🇹🇷'
+    continent: <%= continents.find(c => c.code === 'EU').id %>
+  country19:
+    code: 'CH'
+    name: 'Switzerland'
+    emoji: '🇨🇭'
+    continent: <%= continents.find(c => c.code === 'EU').id %>
+  country20:
+    code: 'SE'
+    name: 'Sweden'
+    emoji: '🇸🇪'
+    continent: <%= continents.find(c => c.code === 'EU').id %>

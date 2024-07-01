@@ -4,6 +4,7 @@ import { expressMiddleware } from "@apollo/server/express4";
 import { ApolloServerPluginDrainHttpServer } from "@apollo/server/plugin/drainHttpServer";
 
 import { CountryResolver } from "./resolvers/country.resolver";
+import { ContinentResolver } from "./resolvers/continent.resolver";
 
 import express from "express";
 import http from "http";
@@ -15,7 +16,7 @@ const httpServer = http.createServer(app);
 
 async function main() {
   const schema = await buildSchema({
-    resolvers: [CountryResolver],
+    resolvers: [ContinentResolver, CountryResolver],
     validate: false,
   });
   const server = new ApolloServer<{}>({

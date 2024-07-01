@@ -1,5 +1,5 @@
 <h1>Je ne sais pas faire de README</h1>
-
+<h2>Je sais pas gérer les fixtures avec ca ><</h2>
 Projet Backend - Checkpoint n°2 CDA JS
 
 🎓 Bonjour David ! 🎓
